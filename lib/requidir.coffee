@@ -1,12 +1,17 @@
 path = require 'path'
 fs = require 'fs'
 
+cache = {}
+
 module.exports = (dir) ->
+  throw new Error('argument "directory" is required') unless dir
+  return cache[dir] if dir of cache
+
   caller = findCaller()
   cwd = path.dirname caller
   target = path.resolve cwd, dir
 
-  fs.readdirSync(target).filter (file) ->
+  cache[dir] = fs.readdirSync(target).filter (file) ->
     fs.statSync(path.join(target, file)).isFile()
   .reduce (container, file) ->
     name = file.replace path.extname(file), ''

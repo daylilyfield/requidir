@@ -1,7 +1,9 @@
 {
   "name": "requidir",
   "version": "0.0.1",
+  "author": "daylilyfield",
   "description": "a node module to require modules in a specified directory.",
+  "homepage": "https://github.com/daylilyfield/requidir",
   "main": "lib/requidir.js",
   "scripts": {
     "test": "jasmine-node --coffee ."
@@ -10,7 +12,6 @@
     "require",
     "directory"
   ],
-  "author": "daylilyfield",
   "license": "MIT",
   "devDependencies": {
     "gulp-coffee": "~1.4.1",
