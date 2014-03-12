@@ -15,11 +15,11 @@ Usage Example
 
 If you have a following directory structure,
 
-  .
-  ├── app.js
-  └── mydir
-      ├── bar.js
-      └── foo.js
+    .
+    ├── app.js
+    └── mydir
+        ├── bar.js
+        └── foo.js
 
 and you want to require bar.js and foo.js from app.js, then you can write your
 code like below with ``requidir``.

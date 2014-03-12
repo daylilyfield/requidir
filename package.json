@@ -1,6 +1,6 @@
 {
   "name": "requidir",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "daylilyfield",
   "description": "a node module to require all modules in a specified directory.",
   "homepage": "https://github.com/daylilyfield/requidir",
