@@ -1,9 +1,14 @@
 {
   "name": "requidir",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "daylilyfield",
-  "description": "a node module to require modules in a specified directory.",
+  "description": "a node module to require all modules in a specified directory.",
   "homepage": "https://github.com/daylilyfield/requidir",
+  "bugs": "https://github.com/daylilyfield/requidir/issues",
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/daylilyfield/requidir.git"
+  },
   "main": "lib/requidir.js",
   "scripts": {
     "test": "jasmine-node --coffee ."
