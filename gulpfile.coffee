@@ -6,4 +6,8 @@ gulp.task 'coffee', ->
       .pipe coffee()
       .pipe gulp.dest 'lib/'
 
+gulp.task 'watch', ->
+  gulp.watch 'lib/*.coffee', ['coffee']
+  return
+
 gulp.task 'default', ['coffee']

@@ -1,0 +1,10 @@
+.git
+.gitignore
+.npmignore
+.DS_Store
+
+gulpfile.coffee
+node_modules
+
+lib/*.coffee
+spec
