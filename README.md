@@ -39,10 +39,15 @@ expect(mydir.bar).toBeDefined();
 API
 ---
 
-``requidir(dir)``
+``requidir(dir, callback)``
 
 - dir: String
+
   directory which contains modules to require.
+
+- callback: (Object) -> Object
+
+  callback which is applied with each module (first argument) in the directory.
 
 License
 -------

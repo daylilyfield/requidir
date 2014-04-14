@@ -26,3 +26,12 @@ describe 'requidir', ->
 
   it 'should throw error if argument "dir" is not a directory', ->
     expect(-> requidir('../hoge')).toThrow()
+
+  it 'should apply callback', ->
+    called = false
+    target3 = requidir './target3', (m) ->
+      called = true
+      m
+    expect(called).toBe true
+    expect(target3.module4).toBeDefined()
+    expect(target3.module4.name).toBe 'module4'
