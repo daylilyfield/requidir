@@ -1,13 +1,19 @@
+require 'coffee-script/register'
+
 gulp = require 'gulp'
+task = gulp.task.bind gulp
+{src, dest, watch} = gulp
+
 coffee = require 'gulp-coffee'
 
-gulp.task 'coffee', ->
-  gulp.src 'lib/*.coffee'
-      .pipe coffee()
-      .pipe gulp.dest 'lib/'
+pipe = require 'pipe-joint'
 
-gulp.task 'watch', ->
-  gulp.watch 'lib/*.coffee', ['coffee']
-  return
+task 'coffee', -> pipe [
+  src 'lib/*.coffee'
+  coffee()
+  dest 'lib/'
+]
 
-gulp.task 'default', ['coffee']
+task 'watch', -> watch 'lib/*.coffee', ['coffee']
+
+task 'default', ['coffee']

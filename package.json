@@ -5,7 +5,7 @@
   "description": "a node module to require all modules in a specified directory.",
   "homepage": "https://github.com/daylilyfield/requidir",
   "bugs": "https://github.com/daylilyfield/requidir/issues",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/daylilyfield/requidir.git"
   },
@@ -22,6 +22,7 @@
     "gulp-coffee": "~1.4.1",
     "gulp": "~3.5.5",
     "coffee-script": "~1.7.1",
-    "jasmine-node": "~1.14.1"
+    "jasmine-node": "~1.14.1",
+    "pipe-joint": "~0.1.0"
   }
 }

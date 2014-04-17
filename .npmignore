@@ -6,5 +6,4 @@
 gulpfile.coffee
 node_modules
 
-lib/*.coffee
 spec
