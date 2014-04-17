@@ -34,7 +34,18 @@ expect(mydir.foo).toBeDefined();
 expect(mydir.bar).toBeDefined();
 ```
 
-``requidir`` can resolve relative path based on caller's file.
+``requidir`` can resolve relative path based on caller's file location.
+
+you can apply functions to each module in the directory.
+
+```javascript
+
+var requidir = require('requidir');
+
+requidir('./mydir', function(mod) {
+    console.log(mod.name + 'is loaded');
+});
+```
 
 API
 ---
