@@ -1,4 +1,4 @@
-requidir = require '../lib/requidir'
+requidir = require '../lib/requidir.coffee'
 
 describe 'requidir', ->
 
@@ -28,10 +28,12 @@ describe 'requidir', ->
     expect(-> requidir('../hoge')).toThrow()
 
   it 'should apply callback', ->
-    called = false
+    called = 0
     target3 = requidir './target3', (m) ->
-      called = true
+      called++
       m
-    expect(called).toBe true
+    expect(called).toBe 2
     expect(target3.module4).toBeDefined()
     expect(target3.module4.name).toBe 'module4'
+    expect(target3.module5).toBeDefined()
+    expect(target3.module5.name).toBe 'module5'

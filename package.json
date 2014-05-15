@@ -1,6 +1,6 @@
 {
   "name": "requidir",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "daylilyfield",
   "description": "a node module to require all modules in a specified directory.",
   "homepage": "https://github.com/daylilyfield/requidir",
@@ -19,10 +19,10 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "gulp-coffee": "~1.4.1",
-    "gulp": "~3.5.5",
-    "coffee-script": "~1.7.1",
-    "jasmine-node": "~1.14.1",
-    "pipe-joint": "~0.1.0"
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.6.2",
+    "gulp-coffee": "^1.4.3",
+    "jasmine-node": "^1.14.3",
+    "pipe-joint": "^0.1.3"
   }
 }
