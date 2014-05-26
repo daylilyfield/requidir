@@ -15,8 +15,8 @@ module.exports = (dir, callback = (m) -> m) ->
     file[0] isnt '.' and fs.statSync(path.join(target, file)).isFile()
   .reduce (container, file) ->
     name = file.replace path.extname(file), ''
-    container[name] = require path.join(target, file)
-    callback container
+    container[name] = callback require(path.join(target, file))
+    container
   , {}
 
 raise = (message) -> throw new Error(message)
